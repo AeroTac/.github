@@ -1,0 +1,29 @@
+name: Story
+description: A clearly bounded user story under a feature; fits in one sprint.
+title: "<short story title>"
+body:
+  - type: markdown
+    attributes:
+      value: "Write in English. Set Status, Sprint, Estimate min, Kind and Meets in the product's project, and link the parent feature as a sub-issue."
+  - type: textarea
+    id: story
+    attributes:
+      label: User story
+      description: "As <role> I want <capability>, so that <benefit>."
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance criteria
+      description: "One checkbox per criterion. Tick it when its test is green."
+      value: |
+        - [ ] AC1: 
+        - [ ] AC2: 
+    validations:
+      required: true
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes and sources
+      description: "Out of scope, dependencies, sources (requirement ids, documents, owner decisions)."

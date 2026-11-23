@@ -1,0 +1,25 @@
+name: Epic
+description: A large initiative of a product; may span several PIs.
+title: "<epic title>"
+body:
+  - type: markdown
+    attributes:
+      value: "Write in English. Its features are linked as sub-issues; PI objectives live in the PI milestone."
+  - type: textarea
+    id: outcome
+    attributes:
+      label: Outcome
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance criteria
+      value: |
+        - [ ] AC1: 
+    validations:
+      required: true
+  - type: textarea
+    id: sources
+    attributes:
+      label: Sources

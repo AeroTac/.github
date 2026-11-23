@@ -1,0 +1,26 @@
+name: Feature
+description: A part of an epic (a plan task); fits in one PI.
+title: "<feature title>"
+type: Feature
+body:
+  - type: markdown
+    attributes:
+      value: "Write in English. Set Estimate d, Meets and the PI milestone; link the parent epic as a sub-issue."
+  - type: textarea
+    id: goal
+    attributes:
+      label: Goal
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance criteria
+      value: |
+        - [ ] AC1: 
+    validations:
+      required: true
+  - type: textarea
+    id: dependencies
+    attributes:
+      label: Dependencies and sources
