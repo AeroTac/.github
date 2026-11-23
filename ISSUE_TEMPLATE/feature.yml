@@ -20,6 +20,13 @@ body:
     validations:
       required: true
   - type: textarea
+    id: scope
+    attributes:
+      label: Out of scope
+      description: "What this deliberately does not cover. Write 'none' if none."
+    validations:
+      required: true
+  - type: textarea
     id: context
     attributes:
       label: Context
