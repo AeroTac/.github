@@ -20,6 +20,16 @@ body:
     validations:
       required: true
   - type: textarea
-    id: sources
+    id: context
     attributes:
-      label: Sources
+      label: Context
+      description: "Why this exists and where it comes from: requirement ids (Manifest), owner decisions (quote and date), Hindsight records, documents, related tickets. Needed later for Flightplan."
+    validations:
+      required: true
+  - type: textarea
+    id: dependencies
+    attributes:
+      label: Dependencies
+      description: "Tickets or branches this depends on, and what depends on it. Write 'none' if none."
+    validations:
+      required: true

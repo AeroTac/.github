@@ -4,7 +4,7 @@ title: "<short story title>"
 body:
   - type: markdown
     attributes:
-      value: "Write in English. Set Status, Sprint, Estimate min, Kind and Meets in the product's project, and link the parent feature as a sub-issue."
+      value: "Write in English. Fill every project field you can at creation (Status, Kind, Meets, Estimate min, WSJF inputs, Start and Target date, PI milestone) and link the parent feature as a sub-issue. A ticket reaches Integrated only with every field filled."
   - type: textarea
     id: story
     attributes:
@@ -23,7 +23,20 @@ body:
     validations:
       required: true
   - type: textarea
-    id: notes
+    id: scope
     attributes:
-      label: Notes and sources
-      description: "Out of scope, dependencies, sources (requirement ids, documents, owner decisions)."
+      label: Out of scope
+  - type: textarea
+    id: context
+    attributes:
+      label: Context
+      description: "Why this exists and where it comes from: requirement ids (Manifest), owner decisions (quote and date), Hindsight records, documents, related tickets. Needed later for Flightplan."
+    validations:
+      required: true
+  - type: textarea
+    id: dependencies
+    attributes:
+      label: Dependencies
+      description: "Tickets or branches this depends on, and what depends on it. Write 'none' if none."
+    validations:
+      required: true
