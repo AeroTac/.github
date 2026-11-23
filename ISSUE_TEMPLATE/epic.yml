@@ -1,6 +1,7 @@
 name: Epic
 description: A large initiative of a product; may span several PIs.
 title: "<epic title>"
+type: Epic
 body:
   - type: markdown
     attributes:
