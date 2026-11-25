@@ -7,9 +7,9 @@ body:
     attributes:
       value: "Write in English. Set Estimate d, Meets and the PI milestone; link the parent epic as a sub-issue. Set Business value, Time criticality, Risk reduction and Job size in the project before the feature is pulled; WSJF follows from them."
   - type: dropdown
-    id: kind
+    id: feature_type
     attributes:
-      label: Kind
+      label: Feature type
       description: "Business: delivers a benefit to a user. Enabler: technical groundwork that later business features need."
       options:
         - Business
