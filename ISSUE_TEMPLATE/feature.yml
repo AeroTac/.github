@@ -5,7 +5,17 @@ type: Feature
 body:
   - type: markdown
     attributes:
-      value: "Write in English. Set Estimate d, Meets and the PI milestone; link the parent epic as a sub-issue."
+      value: "Write in English. Set Estimate d, Meets and the PI milestone; link the parent epic as a sub-issue. Set Business value, Time criticality, Risk reduction and Job size in the project before the feature is pulled; WSJF follows from them."
+  - type: dropdown
+    id: kind
+    attributes:
+      label: Kind
+      description: "Business: delivers a benefit to a user. Enabler: technical groundwork that later business features need."
+      options:
+        - Business
+        - Enabler
+    validations:
+      required: true
   - type: textarea
     id: goal
     attributes:
@@ -13,10 +23,38 @@ body:
     validations:
       required: true
   - type: textarea
+    id: hypothesis
+    attributes:
+      label: Benefit hypothesis
+      description: "We believe <benefit> if <feature>."
+    validations:
+      required: true
+  - type: textarea
     id: acceptance
     attributes:
       label: Acceptance criteria
       description: "One checkbox per criterion, e.g. '- [ ] Refuses X with reason Y'. Tick it when its test is green."
+    validations:
+      required: true
+  - type: input
+    id: catalog
+    attributes:
+      label: Catalog feature
+      description: "The one product catalog feature this delivers, with its id and link."
+    validations:
+      required: true
+  - type: textarea
+    id: requirements
+    attributes:
+      label: Requirements
+      description: "The requirement ids this feature meets, one per line; the same ids go into the project field Meets."
+    validations:
+      required: true
+  - type: textarea
+    id: impact
+    attributes:
+      label: Impact
+      description: "Every ADR, document and section this feature changes or relies on, one per line with its path and section. Write 'none' only if none, never leave it out."
     validations:
       required: true
   - type: textarea
@@ -30,7 +68,7 @@ body:
     id: context
     attributes:
       label: Context
-      description: "Why this exists and where it comes from: requirement ids (Manifest), owner decisions (quote and date), Hindsight records, documents, related tickets. Needed later for Flightplan."
+      description: "Why this exists and where it comes from: owner decisions (quote and date), Hindsight records, documents, related tickets. Needed later for Flightplan."
     validations:
       required: true
   - type: textarea
