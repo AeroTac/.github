@@ -5,7 +5,14 @@ type: Epic
 body:
   - type: markdown
     attributes:
-      value: "Write in English. Its features are linked as sub-issues; PI objectives live in the PI milestone."
+      value: "Write in English. Its features are linked as sub-issues; PI objectives live in the PI milestone. Set Business value, Time criticality, Risk reduction and Job size in the project before the epic is pulled; WSJF follows from them."
+  - type: textarea
+    id: hypothesis
+    attributes:
+      label: Hypothesis
+      description: "We believe that <outcome> will happen if <solution>."
+    validations:
+      required: true
   - type: textarea
     id: outcome
     attributes:
@@ -13,10 +20,38 @@ body:
     validations:
       required: true
   - type: textarea
+    id: indicators
+    attributes:
+      label: Leading indicators
+      description: "What we measure early to see whether the hypothesis holds: the measure, how it is taken, the threshold."
+    validations:
+      required: true
+  - type: textarea
     id: acceptance
     attributes:
       label: Acceptance criteria
       description: "One checkbox per criterion, e.g. '- [ ] Refuses X with reason Y'. Tick it when its test is green."
+    validations:
+      required: true
+  - type: textarea
+    id: catalog
+    attributes:
+      label: Catalog features
+      description: "The product catalog features this epic delivers, one per line with its id and link."
+    validations:
+      required: true
+  - type: textarea
+    id: requirements
+    attributes:
+      label: Requirements
+      description: "The requirement ids this epic meets, one per line; the same ids go into the project field Meets."
+    validations:
+      required: true
+  - type: textarea
+    id: impact
+    attributes:
+      label: Impact
+      description: "Every ADR, document and section this epic changes or relies on, one per line with its path and section. Write 'none' only if none, never leave it out."
     validations:
       required: true
   - type: textarea
@@ -30,7 +65,7 @@ body:
     id: context
     attributes:
       label: Context
-      description: "Why this exists and where it comes from: requirement ids (Manifest), owner decisions (quote and date), Hindsight records, documents, related tickets. Needed later for Flightplan."
+      description: "Why this exists and where it comes from: owner decisions (quote and date), Hindsight records, documents, related tickets. Needed later for Flightplan."
     validations:
       required: true
   - type: textarea
