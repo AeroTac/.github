@@ -1,0 +1,22 @@
+name: Task
+description: A technical step under a story, a feature or an epic; no estimate of its own.
+title: "<task title>"
+type: Task
+body:
+  - type: markdown
+    attributes:
+      value: "Write in English. Link the parent story, feature or epic as a sub-issue. A task has no estimate and no WSJF of its own and is closed with or before its parent."
+  - type: textarea
+    id: what
+    attributes:
+      label: What
+      description: "The step this task does."
+    validations:
+      required: true
+  - type: textarea
+    id: done
+    attributes:
+      label: Done when
+      description: "What is true when the task is done, checkable."
+    validations:
+      required: true

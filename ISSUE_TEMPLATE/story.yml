@@ -5,7 +5,7 @@ type: Story
 body:
   - type: markdown
     attributes:
-      value: "Write in English. Fill every project field you can at creation (Status, Kind, Meets, Estimate min, WSJF inputs, Start and Target date, PI milestone) and link the parent feature as a sub-issue. A ticket reaches Integrated only with every field filled, Test evidence included."
+      value: "Write in English. Fill every project field you can at creation (Status, Kind, Meets, Estimate min, WSJF inputs, Start and Target date, PI field, the milestone of its epic) and link the parent feature as a sub-issue. A ticket reaches Integrated only with every field filled, Test evidence included."
   - type: textarea
     id: story
     attributes:

@@ -1,0 +1,55 @@
+name: Bug
+description: A defect in integrated state; planned, estimated and built like a story, kind fix.
+title: "<bug title>"
+type: Bug
+body:
+  - type: markdown
+    attributes:
+      value: "Write in English. A defect found by the review of an open story is a review finding, not a bug. Link the feature whose behaviour is wrong as the parent; set every project field of a story (Kind fix, Estimate min, WSJF inputs, PI field, the milestone of its epic)."
+  - type: textarea
+    id: observed
+    attributes:
+      label: Observed behaviour
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behaviour
+      description: "With the requirement id or document section that states it."
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+    validations:
+      required: true
+  - type: input
+    id: commit
+    attributes:
+      label: Seen on commit
+      description: "The commit or version the defect was seen on."
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance criteria
+      description: "One checkbox per criterion, e.g. '- [ ] Refuses X with reason Y'. The first is the failing test that reproduces the defect. Tick it when its test is green."
+    validations:
+      required: true
+  - type: textarea
+    id: impact
+    attributes:
+      label: Impact
+      description: "Every ADR, document and section this fix changes or relies on, one per line with its path and section. Write 'none' only if none."
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Test evidence
+      description: "Filled when the bug is closed: the test that proves each criterion (file and test name) and the commit it ran green on."
+    validations:
+      required: false

@@ -5,7 +5,7 @@ type: Feature
 body:
   - type: markdown
     attributes:
-      value: "Write in English. Set Estimate d, Meets and the PI milestone; link the parent epic as a sub-issue. Set Business value, Time criticality, Risk reduction and Job size in the project before the feature is pulled; WSJF follows from them."
+      value: "Write in English. Set Estimate d, Meets, the PI field and the milestone of the parent epic; link the parent epic as a sub-issue. Set Business value, Time criticality, Risk reduction and Job size in the project before the feature is pulled; WSJF follows from them."
   - type: dropdown
     id: feature_type
     attributes:
