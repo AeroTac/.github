@@ -5,7 +5,7 @@ type: Bug
 body:
   - type: markdown
     attributes:
-      value: "Write in English. A defect found by the review of an open story is a review finding, not a bug. Link the feature whose behaviour is wrong as the parent; set every project field of a story (Kind fix, Estimate min, WSJF inputs, PI field, the milestone of its epic)."
+      value: "Write in English. A defect found by the review of an open story is a review finding, not a bug. Link the feature whose behaviour is wrong as the parent; set every project field of a story except the milestone (Kind fix, Estimate min, WSJF inputs, PI field); a bug carries no milestone."
   - type: textarea
     id: observed
     attributes:

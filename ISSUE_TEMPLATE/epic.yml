@@ -5,7 +5,7 @@ type: Epic
 body:
   - type: markdown
     attributes:
-      value: "Write in English. Set the milestone: the one product milestone this epic reaches. Its features are linked as sub-issues; PI objectives live in the PI document in AeroTac-Operations. Set Business value, Time criticality, Risk reduction and Job size in the project before the epic is pulled; WSJF follows from them."
+      value: "Write in English. An epic carries no milestone: its milestones follow from its features and stories and show in the Roadmap. Its features are linked as sub-issues; PI objectives live in the PI document in AeroTac-Operations. Set Business value, Time criticality, Risk reduction and Job size in the project before the epic is pulled; WSJF follows from them."
   - type: textarea
     id: hypothesis
     attributes:

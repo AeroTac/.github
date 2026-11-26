@@ -5,7 +5,7 @@ type: Task
 body:
   - type: markdown
     attributes:
-      value: "Write in English. Link the parent story, feature or epic as a sub-issue. A task has no estimate and no WSJF of its own and is closed with or before its parent."
+      value: "Write in English. Link the parent story, bug, feature or epic as a sub-issue. A task has no estimate and no WSJF of its own and is closed with or before its parent."
   - type: textarea
     id: what
     attributes:

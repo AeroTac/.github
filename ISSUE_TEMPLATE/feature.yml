@@ -1,11 +1,11 @@
 name: Feature
-description: A part of an epic (a plan task); fits in one PI.
+description: A part of a product's work with its Pflichtenheft entries; not bound to one PI, need not sit under an epic.
 title: "<feature title>"
 type: Feature
 body:
   - type: markdown
     attributes:
-      value: "Write in English. Set Estimate d, Meets, the PI field and the milestone of the parent epic; link the parent epic as a sub-issue. Set Business value, Time criticality, Risk reduction and Job size in the project before the feature is pulled; WSJF follows from them."
+      value: "Write in English. Set Meets and exactly one milestone; link the parent epic as a sub-issue if there is one. Set Business value, Time criticality, Risk reduction and Job size in the project before the feature is pulled; WSJF follows from them."
   - type: dropdown
     id: feature_type
     attributes:
