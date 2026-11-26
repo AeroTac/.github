@@ -5,7 +5,7 @@ type: Epic
 body:
   - type: markdown
     attributes:
-      value: "Write in English. An epic carries no time information: no date, no duration, no PI and no milestone; leave the project fields Start date and Target date empty. Its features are linked as sub-issues. Set Business value, Time criticality, Risk reduction and Job size in the project before the epic is pulled; WSJF follows from them. An epic is done when it is decided done: once all its features are implemented, an evaluation decides how it goes on, and its result is written under Evaluation."
+      value: "Write in English. An epic carries no time information: no date, no duration, no program increment and no milestone; leave the project fields Start date and Target date empty. Its features are linked as sub-issues. Set Business value, Time criticality, Risk reduction and Job size in the project before the epic is pulled; WSJF follows from them. An epic is done when it is decided done: once all its features are implemented, an evaluation decides how it goes on, and its result is written under Evaluation."
   - type: textarea
     id: hypothesis
     attributes:
