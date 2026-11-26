@@ -1,11 +1,11 @@
 name: Epic
-description: A large initiative of a product; may span several PIs.
+description: A large initiative of a product, done when it is decided done. It carries no time information.
 title: "<epic title>"
 type: Epic
 body:
   - type: markdown
     attributes:
-      value: "Write in English. An epic carries no milestone: its milestones follow from its features and stories and show in the Roadmap. Its features are linked as sub-issues; PI objectives live in the PI document in AeroTac-Operations. Set Business value, Time criticality, Risk reduction and Job size in the project before the epic is pulled; WSJF follows from them."
+      value: "Write in English. An epic carries no time information: no date, no duration, no PI and no milestone; leave the project fields Start date and Target date empty. Its features are linked as sub-issues. Set Business value, Time criticality, Risk reduction and Job size in the project before the epic is pulled; WSJF follows from them. An epic is done when it is decided done: once all its features are implemented, an evaluation decides how it goes on, and its result is written under Evaluation."
   - type: textarea
     id: hypothesis
     attributes:
@@ -75,3 +75,10 @@ body:
       description: "Tickets or branches this depends on, and what depends on it. Write 'none' if none."
     validations:
       required: true
+  - type: textarea
+    id: evaluation
+    attributes:
+      label: Evaluation
+      description: "Left empty when the epic is cut. Due once all its features are implemented: what was reached against the outcome, the leading indicators and the acceptance criteria, and the owner's decision on how the epic goes on."
+    validations:
+      required: false
